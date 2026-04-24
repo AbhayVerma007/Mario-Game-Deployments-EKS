@@ -190,11 +190,3 @@ kubectl describe hpa mario-hpa
 - **Prometheus Monitoring**: [https://prometheus.io/docs/](https://prometheus.io/docs/)  
 
 ---
-
-## **📢 Credits & Acknowledgments**  
-
-This project is inspired by the **Super Mario** game, and it demonstrates real-world **DevOps practices** using AWS, Terraform, and Kubernetes.  
-
-👉 **Read the detailed blog here**: [Super Mario EKS Deployment](https://blog.prodevopsguy.xyz/deployment-of-super-mario-on-kubernetes-using-terraform)  
-
-🚀 *Happy Gaming & DevOps-ing!* 🎮
