@@ -87,3 +87,9 @@ variable "allowed_cidr_blocks" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
+
+variable "ami_type" {
+  description = "AMI type for the EKS node group"
+  type        = string
+  default     = "AL2_x86_64"
+}
