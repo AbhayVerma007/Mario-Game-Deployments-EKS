@@ -13,7 +13,7 @@ variable "aws_region" {
 variable "eks_version" {
   description = "EKS Kubernetes version"
   type        = string
-  default     = "1.29"
+  default     = "1.33"
 }
 
 variable "node_group_name" {
@@ -25,7 +25,7 @@ variable "node_group_name" {
 variable "instance_types" {
   description = "EC2 instance types for node group"
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["c7i-flex.large"]
 }
 
 variable "desired_size" {
@@ -79,5 +79,5 @@ variable "enable_logging" {
 variable "log_retention_days" {
   description = "CloudWatch log retention in days"
   type        = number
-  default     = 14
+  default     = 7
 }

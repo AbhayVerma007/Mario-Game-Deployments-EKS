@@ -3,13 +3,13 @@
 # Cluster Configuration
 cluster_name    = "EKS_CLOUD"
 aws_region      = "ap-south-1"
-eks_version     = "1.29"
+eks_version     = "1.33"
 
 # Node Group Configuration
 node_group_name = "Node-cloud"
-instance_types  = ["t3.medium"]
+instance_types  = ["c7i-flex.large"]
 desired_size    = 2
-max_size        = 4
+max_size        = 3
 min_size        = 1
 disk_size       = 30
 
@@ -22,4 +22,4 @@ project_name    = "Super Mario EKS Deployment"
 
 # Logging Configuration
 enable_logging      = true
-log_retention_days  = 14
+log_retention_days  = 7
