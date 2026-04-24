@@ -81,3 +81,9 @@ variable "log_retention_days" {
   type        = number
   default     = 7
 }
+
+variable "allowed_cidr_blocks" {
+  description = "List of allowed CIDR blocks for security group"
+  type        = list(string)
+  default     = ["0.0.0.0/0"]
+}
